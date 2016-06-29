@@ -1,0 +1,11 @@
+sudo: required
+git:
+  depth: 5
+addons:
+  apt:
+    packages:
+      - raptor2-utils
+script:
+- rapper -i turtle $(ls -l | grep -i ttl | awk '{ print $9;}')
+services:
+- docker
