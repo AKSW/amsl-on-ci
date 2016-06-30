@@ -7,5 +7,6 @@ addons:
       - raptor2-utils
 script:
 - rapper -i turtle $(ls -l | grep -i ttl | awk '{ print $9;}')
+- docker run -it --rm -v $PWD:/amsl/ --privileged tboonx/rdfunitclean -d /amsl/amsl.ttl -r aggregate
 services:
 - docker
