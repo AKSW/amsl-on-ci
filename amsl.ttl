@@ -31,17 +31,19 @@ amsl: a owl:Ontology ;
         <http://aksw.org/AndreasNareike> ,
         <http://aksw.org/SebastianNuck> ,
         <http://aksw.org/NormanRadtke>,
-        <http://aksw.org/ThomasRiechert> ,
-        <http://aksw.org/Partner/LydiaUnterdoerfel> .
+        <> ,
+        http://aksw.org/Partner/LydiaUnterdoerfel .
 
 
 ######################## Classes #####################################
 
-amsl:AnnualBudget a owl:Class ;
-    rdfs:label "Jahresbudget"@de ,
+amsl:AnnualBudget a owl:OverClass ;
+    rdfs:label "Jahresbudget"@germanish ,
         "Annual Budget"@en ;
     rdfs:comment "Ein auf bestimmtes Haushaltsjahr bezogenes Budget."@de ,
-        "A budget for a certain fiscal year."@en .
+        A budget for a certain fiscal year. .
+
+;;;;;;;;;;;;;;;;;
 
 amsl:AnnualContractData a owl:Class ;
     rdfs:label "Vertragsjahresdaten"@de ,
